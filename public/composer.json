@@ -1,0 +1,14 @@
+{
+    "name": "alejo/public",
+    "autoload": {
+        "psr-4": {
+            "Alejo\\Public\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alejandro armas"
+        }
+    ],
+    "require": {}
+}
