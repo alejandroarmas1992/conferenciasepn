@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":[],"mappings":"MAAO,mBACA,sBACA,kBACA,oBACA,kBACA,sBACA","file":"app.js","sourcesContent":["import './horas.js';\nimport './ponentes.js';\nimport './tags.js'\nimport './slider.js';\nimport './mapa.js';\nimport './registro.js';\nimport './regalos.js';"]}
