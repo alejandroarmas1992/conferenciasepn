@@ -38,7 +38,7 @@ function css() {
 }
 function javascript() {
     return src(paths.js)
-       /*.pipe( webpack({
+       .pipe( webpack({
             
             module: {
                 rules: [
@@ -52,9 +52,9 @@ function javascript() {
             
             },
             mode: 'production',
-            watch: true,
+            watch: false,
             entry: './src/js/app.js'
-        }))*/
+        }))
         .pipe(sourcemaps.init())
         // .pipe(concat('bundle.js')) 
         .pipe(terser())
@@ -104,4 +104,4 @@ exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 exports.dev = parallel( css, imagenes, versionWebp, versionAvif, javascript, dev) ;
-exports.build = parallel( css, imagenes, versionWebp, versionAvif, javascript,dev) ;
+exports.build = parallel( css, imagenes, versionWebp, versionAvif, javascript) ;
