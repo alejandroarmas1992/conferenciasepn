@@ -52,7 +52,7 @@ function javascript() {
             
             },
             mode: 'production',
-            watch: false,
+            watch: true,
             entry: './src/js/app.js'
         }))
         .pipe(sourcemaps.init())
@@ -104,4 +104,4 @@ exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 exports.dev = parallel( css, imagenes, versionWebp, versionAvif, javascript, dev) ;
-exports.build = parallel( css, imagenes, versionWebp, versionAvif, javascript) ;
+exports.build = parallel( css, imagenes, versionWebp, versionAvif, javascript,dev) ;
