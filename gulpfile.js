@@ -38,7 +38,7 @@ function css() {
 }
 function javascript() {
     return src(paths.js)
-       .pipe( webpack({
+       /*.pipe( webpack({
             
             module: {
                 rules: [
@@ -54,7 +54,7 @@ function javascript() {
             mode: 'production',
             watch: true,
             entry: './src/js/app.js'
-        }))
+        }))*/
         .pipe(sourcemaps.init())
         // .pipe(concat('bundle.js')) 
         .pipe(terser())
